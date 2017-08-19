@@ -14,10 +14,11 @@ commands:
 permissions:
   extremeplayerinfo.*:
     description: All of the permissions in this plugin.
+    default: op
     children:
       extremeplayerinfo.info.*: true
-     default: op
   extremeplayerinfo.info.*:
     description: Show everything
+    default: op
     children:
       extremeplayerinfo.info.ip: true

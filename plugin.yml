@@ -1,0 +1,23 @@
+name: ExtremePlayerInfo
+main: me.gobli989.extremeplayerinfo.MainClass
+version: 1.0.0
+description: ExtremePlayerInfo
+author: Gobli989
+prefix: playerinfo
+commands:
+  playerinfo:
+    aliases: [pi, epi, extremeplayerinfo, pinfo, playeri]
+    description: Main and Only Command
+    usage: /<command> <Target>
+    permission: extremeplayerinfo.playerinfo
+    permission-message: You do not have /<permission>
+permissions:
+  extremeplayerinfo.*:
+    description: All of the permissions in this plugin.
+    children:
+      extremeplayerinfo.info.*: true
+     default: op
+  extremeplayerinfo.info.*:
+    description: Show everything
+    children:
+      extremeplayerinfo.info.ip: true
